@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CS50 Quick Quiz</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>CS50 Quick Quiz</h1>
+    <p>A 3-question sprint through Python, SQL, and Flask</p>
+    <a class="cs50-link" href="https://cs50.harvard.edu/x/2025/" target="_blank" rel="noopener noreferrer">
+      Explore CS50 course →
+    </a>
+  </header>
+
+  <main id="app">
+    <section id="home" class="card">
+      <h2>Ready?</h2>
+      <p>Test your CS50 knowledge in under a minute.</p>
+      <button id="startBtn" class="btn">Start quiz</button>
+    </section>
+
+    <section id="quiz" class="card hidden">
+      <div id="question"></div>
+      <div id="choices" class="choices"></div>
+      <div class="quiz-controls">
+        <span id="progress"></span>
+        <button id="nextBtn" class="btn" disabled>Next</button>
+      </div>
+    </section>
+
+    <section id="result" class="card hidden">
+      <h2>Your result</h2>
+      <p id="scoreText"></p>
+      <div class="result-actions">
+        <button id="restartBtn" class="btn">Try again</button>
+        <a class="btn btn-secondary" href="https://cs50.harvard.edu/x/2025/" target="_blank" rel="noopener noreferrer">Learn more in CS50</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>Built by Santhosh • Powered by HTML, CSS, and JavaScript</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

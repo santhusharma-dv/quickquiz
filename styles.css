@@ -1,0 +1,99 @@
+:root {
+  --bg: #0e141b;
+  --card: #16202a;
+  --text: #e6edf3;
+  --muted: #9fb3c8;
+  --accent: #2f81f7;
+  --accent-2: #6e40c9;
+  --good: #2ea043;
+  --bad: #f85149;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  background: linear-gradient(120deg, var(--bg), #0a0f14);
+  color: var(--text);
+}
+
+.header {
+  text-align: center;
+  padding: 32px 16px 16px;
+}
+.header h1 { margin: 0 0 8px; }
+.header p { margin: 0 0 12px; color: var(--muted); }
+.cs50-link {
+  display: inline-block;
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px dashed var(--accent);
+}
+.cs50-link:hover { color: var(--accent-2); border-color: var(--accent-2); }
+
+#app {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.card {
+  background: rgba(22, 32, 42, 0.8);
+  border: 1px solid #25313b;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  backdrop-filter: blur(6px);
+}
+
+.hidden { display: none; }
+
+.btn {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn[disabled] { opacity: 0.6; cursor: not-allowed; }
+.btn:hover { filter: brightness(1.08); }
+.btn-secondary { background: #38414a; }
+
+.choices {
+  display: grid;
+  gap: 10px;
+  margin: 16px 0;
+}
+.choice {
+  border: 1px solid #2a3946;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  background: #1b2631;
+  color: white;        /* makes text white */
+  font-size: 16px;     /* increases font size */
+  font-weight: 600;    /* optional: makes text bold */
+}
+.choice:hover {
+  color: #2f81f7; /* blue when hovered */
+}
+
+.choice.selected {
+  color: #6e40c9; /* purple when selected */
+}
+
+.quiz-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#progress { color: var(--muted); }
+
+.footer {
+  text-align: center;
+  padding: 24px;
+  color: var(--muted);
+}
