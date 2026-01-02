@@ -4,6 +4,8 @@ CS50 Final Project: Quick Quiz
 
 A 3-question sprint through Python, SQL, and Flask — built as my final project for Harvard's CS50.
 
+## 🚀 Youtube
+👉 [https://youtube.com/shorts/U-wBwmvr7y8]
 ## 🚀 Live Demo
 👉 [Play the quiz here](https://santhusharma-dv.github.io/quickquiz/)
 
